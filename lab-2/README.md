@@ -21,36 +21,34 @@ https://denysmatsevych.github.io/web-development-2026/react/labs/lab-2/
 ## Дерево рендерингу
 
 Заповніть за вкладкою **Components ⚛** у React DevTools (§4.6).
-App
-├── Header
-│ └── Card
-│ └── Avatar
-└──Card
-├── Profile key = "1"
-| └── Avatar
-├─Profile key = "2"
-| └── Avatar
-├─Profile key = "3"
-| └── Avatar
-└──Profile key = "4"
-└── Avatar
 
 ```text
 App
+├── Header
+│   ├── Card
+│   │   └── Avatar
+└── Card
+    ├── Profile key = "1"
+    │   └── Avatar
+    ├── Profile key = "2"
+    │   └── Avatar
+    ├── Profile key = "3"
+    │   └── Avatar
+    └── Profile key = "4"
+        └── Avatar
 ```
 
 ## Дерево залежностей модулів
 
+```text
 App.js
-├ Card
-|
-├ Header
-|
-├ Profile
-| └── Avatar
-├ data.js
-|
+├── Card
+├── Header
+├── Profile
+│   └── Avatar
+├── data.js
 └── Avatar
+```
 
 Заповніть за рядками `import` у файлах `src/` (§4.6).
 
